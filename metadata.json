@@ -1,0 +1,5 @@
+{
+  "name": "Smart Kerala Agriculture Portal",
+  "description": "Location-based soil insights and crop recommendations for Kerala farmers using Gemini AI.",
+  "requestFramePermissions": []
+}
