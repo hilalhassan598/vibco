@@ -1,96 +1,60 @@
-<div align="center">
-  <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Smart Kerala Agriculture Portal
 
-# 🌱 Vibco – AI Agriculture Assistant
+## Problem Statement
+Farmers in Kerala often face challenges in identifying the most suitable crops for their specific land. Traditional soil testing can be time-consuming and expensive, and generic agricultural advice often fails to account for the highly localized soil variations across Kerala's diverse geography. This lack of precise, accessible information leads to sub-optimal crop yields and inefficient land management.
 
-An AI-powered agriculture assistant designed to help farmers make smarter, data-driven decisions using location-based insights, weather awareness, and intelligent recommendations.
+## Project Description
+The **Smart Kerala Agriculture Portal** is a hackathon MVP designed to empower Kerala's farmers with instant, location-based agricultural intelligence. 
 
----
+**How it works:**
+1. **Location-Based Soil Mapping**: Instead of complex image analysis, the portal uses a curated dataset of Kerala's districts and areas to instantly identify the predominant soil type (e.g., Laterite, Clay, Red Soil).
+2. **AI-Powered Insights**: It leverages Google Gemini AI to translate raw soil data into beginner-friendly explanations.
+3. **End-to-End Guidance**: Beyond just naming a soil type, the portal generates:
+   - **Custom Crop Recommendations**: Based on the identified soil.
+   - **Detailed Crop Plans**: AI-generated schedules for planting, nutrient management, and pest control.
+   - **Soil Enrichment Advice**: Tailored strategies to improve land health for long-term sustainability.
+4. **Interactive Agri-Assistant**: A real-time chat interface where farmers can ask specific follow-up questions.
 
-## 🚀 Features
+## Google AI Usage
+### Tools / Models Used
+- **Model**: `gemini-3-flash-preview`
+- **SDK**: `@google/genai`
 
-* 📍 **Location-Based Recommendations**
-  Get crop suggestions tailored to specific regions (e.g., Kozhikode, Areekode)
+### How Google AI Was Used
+AI is the "brain" of the portal, integrated across multiple touchpoints:
+- **Insight Enhancement**: Gemini takes static soil data and generates natural, easy-to-understand explanations for farmers.
+- **Dynamic Plan Generation**: It analyzes the combination of location, soil, and crop to create a structured, professional-grade agricultural roadmap.
+- **Expert Advisory**: It acts as a virtual soil scientist, providing specific enrichment tips (like green manure or pH correction) relevant to Kerala's environment.
+- **Conversational Support**: Powering the "Agri Assistant" chat to handle diverse queries ranging from "When should I plant coconut?" to "How do I fix acidic soil?".
 
-* 🌦️ **Weather-Aware Insights**
-  Smart suggestions based on climate and seasonal conditions
+## Demo Video
+[Watch Demo](https://drive.google.com/file/d/1MEs-hqa4bP8Q0_eIQBKHCO5KKxiyt01j/view?usp=drive_link)
 
-* 🤖 **AI Farming Assistant**
-  Ask questions and receive actionable agricultural guidance
+## Installation Steps
+To run this project locally, follow these steps:
 
-* 🌱 **No Hardware Dependency**
-  Works without physical soil testing using regional data models
+### 1. Clone the repository
+```bash
+git clone <your-repo-link>
+```
 
-* ⚡ **Simple & Fast UI**
-  Clean interface built for accessibility and ease of use
+### 2. Go to project folder
+```bash
+cd smart-kerala-agri-portal
+```
 
----
-
-## 🧠 Vision
-
-To empower farmers with AI-driven tools that simplify decision-making and improve productivity—especially in regions where access to advanced agricultural technology is limited.
-
----
-
-## 🛠 Tech Stack
-
-* **Frontend:** React
-* **Backend:** (Pluggable / Optional Django or API-based)
-* **AI:** Google Gemini API
-* **Environment:** Node.js
-
----
-
-## 📦 Getting Started
-
-### Prerequisites
-
-* Node.js installed
-
-### Installation
-
+### 3. Install dependencies
 ```bash
 npm install
 ```
 
-### Setup Environment Variables
-
-Create a `.env.local` file and add:
-
+### 4. Configure Environment Variables
+Create a `.env` file in the root directory and add your Gemini API Key:
 ```env
 GEMINI_API_KEY=your_api_key_here
 ```
 
-### Run the App
-
+### 5. Run the project
 ```bash
 npm run dev
 ```
-
----
-
-## 📌 Future Improvements
-
-* 📊 Advanced crop yield prediction
-* 🛰️ Satellite + soil data integration
-* 📱 Mobile app version
-* 🌍 Multi-language support (Malayalam, Hindi, etc.)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to fork the repo and submit a pull request.
-
----
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
-
----
-
-## 💡 Tagline
-
-**"Smart Farming Starts with Smart Decisions."**
